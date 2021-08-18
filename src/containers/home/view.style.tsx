@@ -12,3 +12,13 @@ export const Wrapper = styled.div`
     color: ${(props) => props.theme.colors.blueDark};
   }
 `;
+
+export const WrapperBoxValues = styled.div`
+  max-width: 60%;
+
+  margin: 3rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;

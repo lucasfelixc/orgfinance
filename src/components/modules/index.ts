@@ -3,3 +3,7 @@ export { default as ContentPerfil } from './ContentPerfil';
 export { default as CreditCard } from './CreditCard';
 export { default as ContentBudget } from './ContentBudget';
 export { default as PainelNavigation } from './PainelNavigation';
+export { default as PaymentLimit } from './PaymentLimit';
+export { default as IncomeBox } from './IncomeBox';
+export { default as SpendingBox } from './SpendingBox';
+export { default as SpendingList } from './SpendingList';

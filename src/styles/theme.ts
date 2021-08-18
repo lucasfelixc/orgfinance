@@ -4,6 +4,8 @@ const theme = {
 
     gray50: '#F7F8FA',
     gray100: '#E6E8EB',
+    gray125: '#D9DBDD',
+    gray150: '#CCCECF',
     gray200: '#AFB2B1',
     gray500: '#808080',
     gray800: '#494D4B',

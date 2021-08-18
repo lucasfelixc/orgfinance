@@ -3,15 +3,13 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 import LogoCard from '~/assets/images/icons/credit.svg';
+import { SwitchButton } from '~/components';
 import { moneyFormat } from '~/utils/format';
 
 import {
   Container,
   ContentTop,
   ContentActions,
-  CheckBoxWrapper,
-  CheckBoxLabel,
-  CheckBox,
   ContentValue,
   ContentFooter,
 } from './CreditCard.style';
@@ -30,15 +28,10 @@ const CreditCard: React.FC<CreditCardProps> = ({ value, number }) => {
         <span>Valor disponível</span>
         <ContentActions>
           <span>{isCredit ? 'Crédito' : 'Débito'}</span>
-          <CheckBoxWrapper>
-            <CheckBox
-              id="checkbox"
-              type="checkbox"
-              checked={isCredit}
-              onChange={() => setIsCredit(!isCredit)}
-            />
-            <CheckBoxLabel htmlFor="checkbox" />
-          </CheckBoxWrapper>
+          <SwitchButton
+            checked={isCredit}
+            onChange={() => setIsCredit(!isCredit)}
+          />
         </ContentActions>
       </ContentTop>
       <ContentValue>

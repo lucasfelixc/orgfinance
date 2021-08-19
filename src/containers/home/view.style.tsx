@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperBoxValues = styled.div`
-  max-width: 60%;
+  max-width: 80%;
 
   margin: 3rem 0;
 

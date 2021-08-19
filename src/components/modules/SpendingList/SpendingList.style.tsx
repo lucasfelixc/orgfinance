@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 60%;
+  max-width: 80%;
 `;
 
 export const WrapperTitle = styled.div`
@@ -12,7 +12,7 @@ export const WrapperTitle = styled.div`
 
 export const WrapperItem = styled.div`
   width: 100%;
-  max-height: 14rem;
+  max-height: 13rem;
 
   overflow-y: auto;
 
@@ -24,8 +24,14 @@ export const WrapperItem = styled.div`
     border: 1px solid ${(props) => props.theme.colors.gray100};
   }
   ::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.gray150};
+    background: none;
     border-radius: 10px;
+  }
+
+  &:hover {
+    ::-webkit-scrollbar-thumb {
+      background: ${(props) => props.theme.colors.gray150};
+    }
   }
 `;
 

@@ -5,7 +5,7 @@ export const ContentTop = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  max-width: 60%;
+  max-width: 80%;
 
   span {
     color: ${(props) => props.theme.colors.gray500};

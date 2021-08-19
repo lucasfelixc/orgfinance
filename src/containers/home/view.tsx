@@ -4,11 +4,19 @@ import {
   IncomeBox,
   SpendingBox,
   SpendingList,
+  ExpensesStatistics,
+  MailingList,
+  ScheduleList,
 } from '~/components';
 
 import { Container, Wrapper, WrapperBoxValues } from './view.style';
 
-const View = () => {
+interface ViewProps {
+  MailingListData: models.PersonData[];
+  ScheduleListData: models.PaymentData[];
+}
+
+const View: React.FC<ViewProps> = ({ MailingListData, ScheduleListData }) => {
   return (
     <Container>
       <Wrapper>
@@ -22,7 +30,9 @@ const View = () => {
         <SpendingList />
       </Wrapper>
       <Wrapper>
-        <h1>Hello world</h1>
+        <ExpensesStatistics />
+        <MailingList data={MailingListData} />
+        <ScheduleList list={ScheduleListData} />
       </Wrapper>
     </Container>
   );

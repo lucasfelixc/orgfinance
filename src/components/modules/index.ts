@@ -7,3 +7,6 @@ export { default as PaymentLimit } from './PaymentLimit';
 export { default as IncomeBox } from './IncomeBox';
 export { default as SpendingBox } from './SpendingBox';
 export { default as SpendingList } from './SpendingList';
+export { default as ExpensesStatistics } from './ExpensesStatistics';
+export { default as MailingList } from './MailingList';
+export { default as ScheduleList } from './ScheduleList';
